@@ -10,7 +10,10 @@ const HomePage: React.FC = () => {
     <Layout showNavigation={true} showFloatingChat={true}>
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-background via-muted/20 to-accent/10">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Orange Banner Background */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-accent/30 to-primary/20 animate-pulse"></div>
+        
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col lg:flex-row items-center justify-center min-h-[calc(100vh-4rem)] gap-12 lg:gap-20">
             
             {/* Content Section - Left Side */}
