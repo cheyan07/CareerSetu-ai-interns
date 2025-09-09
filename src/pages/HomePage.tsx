@@ -11,34 +11,35 @@ const HomePage: React.FC = () => {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-background via-muted/20 to-accent/10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] text-center space-y-8">
+          <div className="flex flex-col lg:flex-row items-center justify-center min-h-[calc(100vh-4rem)] gap-12 lg:gap-20">
             
-            {/* Logo */}
-            <div className="relative">
-              <img 
-                src={saarthiLogo} 
-                alt="Saarthi Logo" 
-                className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 rounded-3xl shadow-2xl card-hover"
-              />
-              <div className="absolute inset-0 bg-gradient-primary opacity-20 rounded-3xl"></div>
-            </div>
-
-            {/* Main Heading */}
-            <div className="space-y-4 max-w-4xl">
-              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight">
+            {/* Content Section - Left Side */}
+            <div className="flex-1 text-left space-y-6 max-w-2xl">
+              {/* Main Heading */}
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
                 <span className="gradient-primary bg-clip-text text-transparent">Saarthi</span>
                 <span className="block text-2xl sm:text-3xl lg:text-4xl mt-2 text-foreground">
                   Your AI Internship Assistant
                 </span>
               </h1>
               
-              <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground glow-text max-w-3xl mx-auto leading-relaxed">
+              <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground glow-text leading-relaxed">
                 Find the right internship with AI-powered personalized recommendations
               </p>
             </div>
 
-            {/* CTA Button */}
-            <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+            {/* Logo Section - Right Side */}
+            <div className="relative flex-shrink-0">
+              <img 
+                src={saarthiLogo} 
+                alt="Saarthi Logo" 
+                className="w-48 h-48 sm:w-56 sm:h-56 lg:w-72 lg:h-72 xl:w-80 xl:h-80 rounded-3xl shadow-2xl card-hover"
+              />
+              <div className="absolute inset-0 bg-gradient-primary opacity-20 rounded-3xl"></div>
+            </div>
+
+            {/* CTA Buttons - Full Width Below */}
+            <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
               <Button 
                 size="lg" 
                 className="gradient-primary text-lg px-8 py-4 rounded-xl shadow-xl hover:scale-105 transition-bounce"
