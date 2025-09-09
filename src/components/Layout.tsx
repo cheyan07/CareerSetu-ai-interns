@@ -35,7 +35,7 @@ const Layout: React.FC<LayoutProps> = ({
   return (
     <div className="min-h-screen bg-background">
       {showNavigation && (
-        <nav className="w-full bg-card/50 backdrop-blur-sm border-b border-border sticky top-0 z-40">
+        <nav className="w-full bg-slate-800 backdrop-blur-sm border-b border-border sticky top-0 z-40">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
               {/* Navigation Links */}
@@ -45,10 +45,10 @@ const Layout: React.FC<LayoutProps> = ({
                     key={path}
                     variant={isActive(path) ? "default" : "ghost"}
                     size="sm"
-                    className={`transition-smooth ${
+                    className={`transition-smooth text-white ${
                       isActive(path) 
                         ? 'gradient-primary text-primary-foreground shadow-lg' 
-                        : 'hover:bg-muted'
+                        : 'hover:bg-slate-700 text-white'
                     }`}
                     asChild
                   >
@@ -65,13 +65,13 @@ const Layout: React.FC<LayoutProps> = ({
                 {/* Language Selector - Only on Home page */}
                 {location.pathname === '/' && (
                   <Select defaultValue="en">
-                    <SelectTrigger className="w-24 sm:w-32 h-9">
+                    <SelectTrigger className="w-24 sm:w-32 h-9 bg-slate-700 border-slate-600 text-white">
                       <SelectValue />
                     </SelectTrigger>
-                    <SelectContent className="bg-card border-border">
-                      <SelectItem value="en">English</SelectItem>
-                      <SelectItem value="hi">Hindi</SelectItem>
-                      <SelectItem value="mr">Marathi</SelectItem>
+                    <SelectContent className="bg-slate-800 border-slate-600">
+                      <SelectItem value="en" className="text-white hover:bg-slate-700">English</SelectItem>
+                      <SelectItem value="hi" className="text-white hover:bg-slate-700">Hindi</SelectItem>
+                      <SelectItem value="mr" className="text-white hover:bg-slate-700">Marathi</SelectItem>
                     </SelectContent>
                   </Select>
                 )}
@@ -80,7 +80,7 @@ const Layout: React.FC<LayoutProps> = ({
                 <Button 
                   variant="outline" 
                   size="sm"
-                  className="transition-smooth hover:bg-primary hover:text-primary-foreground"
+                  className="transition-smooth border-slate-600 text-white hover:bg-primary hover:text-primary-foreground"
                 >
                   Login
                 </Button>
