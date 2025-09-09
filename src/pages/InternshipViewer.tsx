@@ -131,7 +131,7 @@ const InternshipViewer: React.FC = () => {
               <Button
                 variant="outline"
                 size="icon"
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 rounded-full bg-card/80 backdrop-blur-sm hover:bg-card transition-smooth"
+                className="absolute -left-16 top-1/2 transform -translate-y-1/2 z-10 rounded-full bg-card/90 backdrop-blur-sm hover:bg-card transition-smooth shadow-lg"
                 onClick={prevInternship}
               >
                 <ChevronLeft className="h-4 w-4" />
@@ -140,7 +140,7 @@ const InternshipViewer: React.FC = () => {
               <Button
                 variant="outline"
                 size="icon"
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 rounded-full bg-card/80 backdrop-blur-sm hover:bg-card transition-smooth"
+                className="absolute -right-16 top-1/2 transform -translate-y-1/2 z-10 rounded-full bg-card/90 backdrop-blur-sm hover:bg-card transition-smooth shadow-lg"
                 onClick={nextInternship}
               >
                 <ChevronRight className="h-4 w-4" />
