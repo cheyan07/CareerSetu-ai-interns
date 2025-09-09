@@ -77,12 +77,11 @@ const Layout: React.FC<LayoutProps> = ({
                 )}
                 
                 {/* Login Button */}
-                <Button 
-                  variant="outline" 
-                  size="sm"
-                  className="transition-smooth border-slate-600 text-white hover:bg-primary hover:text-primary-foreground"
-                >
-                  Login
+                <Button
+                className="bg-primary text-white px-6 py-2 rounded-xl shadow hover:bg-primary/80 transition"
+                asChild
+              >
+                <Link to="/login">Login</Link>
                 </Button>
               </div>
             </div>

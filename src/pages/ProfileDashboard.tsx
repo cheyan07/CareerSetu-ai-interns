@@ -44,6 +44,22 @@ const ProfileDashboard: React.FC = () => {
     });
   };
 
+  const [locations, setLocations] = useState<string[]>([""]);
+
+const handleLocationChange = (index: number, value: string) => {
+  const updated = [...locations];
+  updated[index] = value;
+  setLocations(updated);
+};
+
+const addLocation = () => {
+  if (locations.length < 4) setLocations([...locations, ""]);
+};
+
+const removeLocation = (index: number) => {
+  setLocations(locations.filter((_, i) => i !== index));
+};
+
   return (
     <Layout showNavigation={true}>
       <div className="min-h-screen bg-gradient-to-br from-background via-muted/10 to-primary/5">
@@ -115,27 +131,39 @@ const ProfileDashboard: React.FC = () => {
 
             {/* Location Section */}
             <Card className="card-hover">
-              <CardHeader>
-                <CardTitle className="flex items-center space-x-2">
-                  <MapPin className="h-5 w-5 text-primary" />
-                  <span>Location</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Label htmlFor="location">Your current location</Label>
-                <div className="relative mt-2">
-                  <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                  <Input
-                    id="location"
-                    type="text"
-                    placeholder="e.g., Mumbai, Maharashtra"
-                    value={profileData.location}
-                    onChange={(e) => handleInputChange('location', e.target.value)}
-                    className="pl-10 transition-smooth focus:ring-primary/20"
-                  />
-                </div>
-              </CardContent>
-            </Card>
+  <CardHeader>
+    <CardTitle className="flex items-center space-x-2">
+      <MapPin className="h-5 w-5 text-primary" />
+      <span>Location</span>
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <Label htmlFor="location">Add up to 3 locations</Label>
+    <div className="space-y-3 mt-2">
+      {locations.map((loc, idx) => (
+        <div key={idx} className="flex items-center gap-2">
+          <Input
+            type="text"
+            placeholder={`Location ${idx + 1}`}
+            value={loc}
+            onChange={e => handleLocationChange(idx, e.target.value)}
+            className="pl-3 transition-smooth focus:ring-primary/20"
+          />
+          {locations.length > 1 && (
+            <Button variant="outline" size="sm" onClick={() => removeLocation(idx)}>
+              Remove
+            </Button>
+          )}
+        </div>
+      ))}
+      {locations.length < 3 && (
+        <Button size="sm" onClick={addLocation}>
+          Add Location
+        </Button>
+      )}
+    </div>
+  </CardContent>
+</Card>
 
             {/* File Upload Sections */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

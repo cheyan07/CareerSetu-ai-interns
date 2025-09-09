@@ -119,7 +119,7 @@ const InternshipViewer: React.FC = () => {
               Internship Opportunities
             </h1>
             <p className="text-muted-foreground text-lg">
-              Swipe through personalized internship recommendations
+              Switch through personalized internship recommendations
             </p>
           </div>
 
