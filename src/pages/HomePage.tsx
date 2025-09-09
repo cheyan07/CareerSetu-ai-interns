@@ -14,7 +14,7 @@ const HomePage: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-accent/30 to-primary/20 animate-pulse"></div>
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="flex flex-col lg:flex-row items-center justify-center min-h-[calc(100vh-4rem)] gap-12 lg:gap-20">
+          <div className="flex flex-col lg:flex-row items-center justify-center min-h-[calc(100vh-4rem)] gap-12 lg:gap-20 pl-8 lg:pl-16">
             
             {/* Content Section - Left Side */}
             <div className="flex-1 text-left space-y-6 max-w-2xl">
@@ -42,7 +42,7 @@ const HomePage: React.FC = () => {
             </div>
 
             {/* CTA Buttons - Full Width Below */}
-            <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
               <Button 
                 size="lg" 
                 className="gradient-primary text-lg px-8 py-4 rounded-xl shadow-xl hover:scale-105 transition-bounce"
