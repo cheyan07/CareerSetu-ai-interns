@@ -34,9 +34,9 @@ const HomePage: React.FC = () => {
             {/* Logo Section - Right Side */}
             <div className="relative flex-shrink-0">
               <img 
-                src={saarthiLogo} 
+                src="/lovable-uploads/80b5a3dd-c3cb-464f-93a6-81bd16bab2f1.png" 
                 alt="Saarthi Logo" 
-                className="w-48 h-48 sm:w-56 sm:h-56 lg:w-72 lg:h-72 xl:w-80 xl:h-80 rounded-3xl shadow-2xl card-hover"
+                className="w-64 h-64 sm:w-72 sm:h-72 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem] rounded-3xl shadow-2xl card-hover object-cover"
               />
               <div className="absolute inset-0 bg-gradient-primary opacity-20 rounded-3xl"></div>
             </div>
