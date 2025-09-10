@@ -1,6 +1,6 @@
 # CareerSetu: Your Personal AI Internship Guide
 
-[![SIH 2024](https://img.shields.io/badge/SIH-2024-blue.svg)](https://sih.gov.in)
+[![SIH 2025](https://img.shields.io/badge/SIH-2025-blue.svg)](https://sih.gov.in)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 An AI-powered internship recommendation engine designed for the PM Internship Scheme, specifically tailored for the youth of India from diverse backgrounds. CareerSetu aims to bridge the information gap and provide personalized, accessible career guidance.
