@@ -40,7 +40,7 @@ const HomePage: React.FC = () => {
             {/* Logo Section - Right Side */}
             <div className="relative flex-shrink-0">
               <img
-                src="/lovable-uploads/80b5a3dd-c3cb-464f-93a6-81bd16bab2f1.png"
+                src="/pm_img/80b5a3dd-c3cb-464f-93a6-81bd16bab2f1.png"
                 alt="CareerSetu Logo"
                 className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-3xl shadow-2xl card-hover object-cover"
               />
