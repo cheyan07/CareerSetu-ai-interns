@@ -1,7 +1,12 @@
+My apologies. The previous version had formatting issues with the links that didn't render correctly on GitHub. I have fixed it.
+
+Here is the clean, corrected text for your README.md file. You can copy this entire block and paste it directly into GitHub.
+
 CareerSetu: Your Personal AI Internship Guide
 !(https://img.shields.io/badge/SIH-2024-blue.svg)
-!(https://www.google.com/search?q=https://img.shields.io/badge/React-20232A%3Fstyle%3Dfor-the-badge%26logo%3Dreact%26logoColor%3D61DAFB)
-!(https://www.google.com/search?q=https://img.shields.io/badge/TypeScript-007ACC%3Fstyle%3Dfor-the-badge%26logo%3Dtypescript%26logoColor%3Dwhite)
+!(https://img.shields.io/badge/License-MIT-yellow.svg)
+!(https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+!(https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 !(https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 CareerSetu is an intelligent, AI-powered internship recommendation engine built for the Smart India Hackathon. Our mission is to bridge the opportunity gap for students across India, especially first-generation learners and those in remote areas, by providing simple, personalized, and actionable career guidance.
