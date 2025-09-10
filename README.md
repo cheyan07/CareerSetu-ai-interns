@@ -1,120 +1,110 @@
-My apologies. The previous version had formatting issues with the links that didn't render correctly on GitHub. I have fixed it.
+# CareerSetu: Your Personal AI Internship Guide
 
-Here is the clean, corrected text for your README.md file. You can copy this entire block and paste it directly into GitHub.
+[![SIH 2024](https://img.shields.io/badge/SIH-2024-blue.svg)](https://sih.gov.in)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-CareerSetu: Your Personal AI Internship Guide
-!(https://img.shields.io/badge/SIH-2024-blue.svg)
-!(https://img.shields.io/badge/License-MIT-yellow.svg)
-!(https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-!(https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-!(https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+An AI-powered internship recommendation engine designed for the PM Internship Scheme, specifically tailored for the youth of India from diverse backgrounds. CareerSetu aims to bridge the information gap and provide personalized, accessible career guidance.
 
-CareerSetu is an intelligent, AI-powered internship recommendation engine built for the Smart India Hackathon. Our mission is to bridge the opportunity gap for students across India, especially first-generation learners and those in remote areas, by providing simple, personalized, and actionable career guidance.
+---
 
-🎯 The Problem
-The PM Internship Scheme portal lists hundreds of opportunities, creating a significant challenge for students who lack prior experience or digital literacy. This information overload leads to:
+## 🎯 The Problem
 
-Decision Paralysis: Students are overwhelmed by too many choices.
+Youth across India, especially from **rural areas, tribal districts, and urban slums**, face a significant challenge when applying for internships. As first-generation learners with limited digital exposure, they are often overwhelmed by hundreds of listings. This leads to:
+* **Information Overload:** Inability to identify relevant opportunities.
+* **Misaligned Applications:** Applying for internships that don't match their skills or aspirations.
+* **Missed Opportunities:** Overlooking ideal internships due to a complex discovery process.
 
-Misaligned Applications: Students apply for internships that don't match their skills or interests.
+---
 
-Missed Opportunities: The most promising candidates miss out on the best-fit opportunities because they can't find them.
+## ✨ Our Solution: CareerSetu
 
-Our target users are often first-generation learners from rural areas, tribal districts, and remote colleges who need a guiding hand, not just a search bar.
+CareerSetu is a simple, lightweight, and intelligent platform that acts as a personal career guide. It provides **3-5 highly relevant internship suggestions**, making the choice clear and informed.
 
-✨ Our Solution: CareerSetu
-CareerSetu (meaning "Career Bridge") is a lightweight, mobile-first platform that cuts through the noise. Instead of a long, confusing list, we provide 3-5 highly relevant, personalized internship suggestions in a clean, easy-to-understand format.
+### Key Features
 
-Key Features
-🧠 Smart AI Matching: Our hybrid recommendation model analyzes a student's profile—education, skills, interests, and location—to find the perfect match.
+* **🤖 Conversational AI ("Sarathi"):** A friendly guide that helps users build their profile through simple questions, breaking down digital literacy barriers.
+* **🧠 Smart Hybrid Recommendations:** Combines **Content-Based Filtering** (matching your skills) and **Collaborative Filtering** (what similar students liked) to give you the best of both worlds and solve the "cold-start" problem.
+* **📱 Mobile-First & Accessible:** A clean, intuitive UI with minimal text and visual cues, designed to work flawlessly on low-end smartphones.
+* **🌐 Multilingual Support:** Built to be adapted for regional languages, ensuring inclusivity for all users.
 
-💬 Simple & Intuitive UI: We use a clean, card-based layout with minimal text and clear visual cues, designed for users with low digital literacy.
+---
 
-📱 Mobile-First Design: Fully responsive and accessible on any device, ensuring reach for students who rely on smartphones.
+## 🛠️ Technology Stack
 
-🌐 Multilingual Ready: The architecture is built to support regional languages, breaking down communication barriers.
+We use a modern, lightweight, and scalable tech stack for rapid development and deployment.
 
-🛠️ Technology Stack
-This project is built with a modern, fast, and scalable tech stack, perfect for rapid development and deployment.
+### Frontend
+* **Vite:** High-performance build tool for a blazing-fast development experience.
+* **React:** A declarative, efficient, and flexible JavaScript library for building user interfaces.
+* **TypeScript:** Strong typing for robust and maintainable code.
+* **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
+* **shadcn-ui:** Re-usable components built using Radix UI and Tailwind CSS.
 
-Frontend
-Vite: A next-generation frontend tooling for a blazing fast development experience.
+### Backend
+* **Node.js:** A lightweight and efficient JavaScript runtime.
+* **Express.js:** A fast, unopinionated, minimalist web framework for Node.js APIs.
+* **TensorFlow.js (for AI Model):** Enables running machine learning models directly in Node.js, keeping the stack unified.
 
-(https://reactjs.org/): A powerful JavaScript library for building user interfaces.
+---
 
-(https://www.typescriptlang.org/): For adding static types to JavaScript, improving code quality and maintainability.
+## 🚀 Getting Started
 
-(https://tailwindcss.com/): A utility-first CSS framework for rapid UI development.
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-shadcn-ui: A collection of beautifully designed, accessible UI components.
+### Prerequisites
 
-Backend
-Node.js: A fast and scalable JavaScript runtime for the backend.
+You need to have Node.js and npm (Node Package Manager) installed on your machine.
+* [Node.js (LTS version recommended)](https://nodejs.org/)
 
-Express.js: A minimal and flexible Node.js web application framework for building our API.
+### Installation
 
-(https://www.tensorflow.org/js): To run our "ML-light" recommendation models directly in a JavaScript environment.
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/careersetu.git](https://github.com/your-username/careersetu.git)
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd careersetu
+    ```
+3.  **Install Frontend Dependencies (assuming a `client` folder):**
+    ```bash
+    cd client
+    npm install
+    ```
+4.  **Install Backend Dependencies (assuming a `server` folder):**
+    ```bash
+    cd ../server
+    npm install
+    ```
 
-🚀 Getting Started
-To get a local copy up and running, follow these simple steps.
+### Running the Application
 
-Prerequisites
-Make sure you have Node.js and npm installed on your machine. We recommend using nvm (Node Version Manager) to manage versions.
+1.  **Start the Backend Server:**
+    (In the `/server` directory)
+    ```bash
+    npm run dev
+    ```
+2.  **Start the Frontend Development Server:**
+    (In a new terminal, in the `/client` directory)
+    ```bash
+    npm run dev
+    ```
+The application should now be running on `http://localhost:5173` (or another port if specified).
 
-Install nvm
+---
 
-Installation
-**Clone the repository:**sh
-git clone https://github.com/your-username/CareerSetu.git
+## 🤝 Contributing
 
-Navigate to the project directory:
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Bash
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
 
-cd CareerSetu
-Install NPM packages for the frontend:
+---
 
-Bash
+## 📄 License
 
-cd client
-npm install
-Install NPM packages for the backend:
-
-Bash
-
-cd../server
-npm install
-Running the Application
-Start the backend server:
-
-Bash
-
-cd server
-npm run dev
-The server will start on http://localhost:3000.
-
-Start the frontend development server:
-
-Bash
-
-cd client
-npm run dev
-Open http://localhost:5173 in your browser to see the application.
-
-🤝 Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-
-Fork the Project
-
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-
-Push to the Branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-📄 License
-Distributed under the MIT License. See LICENSE for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
